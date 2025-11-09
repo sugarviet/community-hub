@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from '@/components/ui/button';
 import { Icon, Logo, Overlay, ThemeButton } from '@/components/_share';
+import SimpleNavbar from './components/SimpleNavbar';
 
 const NAVBAR_ITEMS = [
   { label: 'Features', href: '#features' },
@@ -109,4 +110,5 @@ const MobileNavbar = () => {
 }
 
 
-export default Navbar
+export { SimpleNavbar };
+export default Navbar;
