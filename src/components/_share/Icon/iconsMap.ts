@@ -8,6 +8,15 @@ import {
   Heart,
   Plus,
   LogOut,
+  Menu,
+  Sun,
+  Moon,
+  MessageSquare,
+  TrendingUp,
+  Zap,
+  Shield,
+  ArrowRight,
+  Users
 } from "lucide-react";
 
 export const iconsMap = {
@@ -20,6 +29,15 @@ export const iconsMap = {
   heart: Heart,
   plus: Plus,
   logout: LogOut,
+  menu: Menu,
+  sun: Sun,
+  moon: Moon,
+  messageSquare: MessageSquare,
+  trendingUp: TrendingUp,
+  zap: Zap,
+  shield: Shield,
+  arrowRight: ArrowRight,
+  users: Users
 };
 
 export type IconName = keyof typeof iconsMap;

@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import dynamic from 'next/dynamic'
 import { iconsMap, IconName } from "./iconsMap";
 import type { LucideProps } from "lucide-react";
 import classNames from "classnames";
@@ -16,4 +17,5 @@ const Icon = ({name, className, ...rest}: IconProps) => {
   )
 }
 
-export default Icon
+// export default Icon
+export default dynamic(() => Promise.resolve(Icon), { ssr: false })

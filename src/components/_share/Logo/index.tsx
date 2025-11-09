@@ -1,8 +1,9 @@
 import React from 'react'
+import Image from 'next/image';
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <Image src={"/logo.svg"} alt='logo' width={50} height={50}/>
   )
 }
 
