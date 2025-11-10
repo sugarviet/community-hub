@@ -11,7 +11,7 @@ const Layout = ({children}: {children: React.ReactNode}) => {
       <main className='flex-1 border-r border-border max-w-5xl'>
       {children}
       </main>
-      <aside>
+      <aside className='hidden md:block'>
         <TrendingSidebar />
       </aside>
       </div>

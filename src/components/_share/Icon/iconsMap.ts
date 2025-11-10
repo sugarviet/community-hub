@@ -16,7 +16,8 @@ import {
   Zap,
   Shield,
   ArrowRight,
-  Users
+  Users,
+  Ellipsis
 } from "lucide-react";
 
 export const iconsMap = {
@@ -37,7 +38,8 @@ export const iconsMap = {
   zap: Zap,
   shield: Shield,
   arrowRight: ArrowRight,
-  users: Users
+  users: Users,
+  ellipsis: Ellipsis,
 };
 
 export type IconName = keyof typeof iconsMap;
