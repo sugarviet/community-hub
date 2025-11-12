@@ -17,7 +17,8 @@ import {
   Shield,
   ArrowRight,
   Users,
-  Ellipsis
+  Ellipsis,
+  Repeat2,
 } from "lucide-react";
 
 export const iconsMap = {
@@ -40,6 +41,7 @@ export const iconsMap = {
   arrowRight: ArrowRight,
   users: Users,
   ellipsis: Ellipsis,
+  repeat: Repeat2
 };
 
 export type IconName = keyof typeof iconsMap;
