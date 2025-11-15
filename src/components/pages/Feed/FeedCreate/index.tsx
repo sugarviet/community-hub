@@ -1,12 +1,11 @@
 'use client';
-import React from 'react'
 import { Avatar } from '@/components/_share'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { Textarea } from '@/components/ui/textarea'
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form'
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 
 import { FeedCreateValues, FeedCreateSchema } from './schema';
 
@@ -23,9 +22,9 @@ const FeedCreate = () => {
   };
 
   return (
-    <div className="border-b-2 flex flex-col gap-2 pb-2">
+    <div className="border-b-2 flex flex-col gap-2 pb-4 px-6">
       <div className="flex gap-2">
-        <Avatar />
+        <Avatar url=''/>
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 flex flex-col gap-2">

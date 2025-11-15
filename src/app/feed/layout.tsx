@@ -8,10 +8,10 @@ const Layout = ({children}: {children: React.ReactNode}) => {
       <SimpleNavbar />
       <div className='flex'>
       <Sidebar />
-      <main className='flex-1 border-r border-border max-w-5xl'>
+      <main className='flex-1 border-r max-w-6xl'>
       {children}
       </main>
-      <aside className='hidden md:block'>
+      <aside className='hidden lg:block w-100 max-w-100'>
         <TrendingSidebar />
       </aside>
       </div>

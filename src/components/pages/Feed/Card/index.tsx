@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = (props) => {
     timePosted
   } = props;
   return (
-    <div className='flex gap-2'>
+    <div className='p-6 flex gap-2 border-b cursor-pointer hover:bg-secondary/10 transition-colors'>
       <Avatar url={avatarUrl} />
       <div id='content'>
         <UserInfo />
@@ -31,6 +31,26 @@ const Card: React.FC<CardProps> = (props) => {
       </div>
 
     </div>
+  )
+}
+
+
+const UserInfo: React.FC<Pick<CardProps, 'userName' | 'timePosted' | 'userHandle'>> = () => {
+  return (
+    <div className='flex items-baseline gap-2'>
+      <p id='username' className='font-bold hover:underline'>Sarah Chen</p>
+      <span className='text-muted-foreground'>@sarahchen</span>
+      <span className='text-muted-foreground'>·</span>
+      <span className='text-muted-foreground'>2h</span>
+    </div>
+  )
+}
+
+const Content = () => {
+  return (
+    <p>
+      Just finished a 5K run in the park! Feeling great and energized. #fitness #running
+    </p>
   )
 }
 
@@ -53,25 +73,6 @@ const Actions = () => {
         </div>
       </button>
     </div>
-  )
-}
-
-const UserInfo: React.FC<Pick<CardProps, 'userName' | 'timePosted' | 'userHandle'>> = () => {
-  return (
-    <div className='flex items-center gap-2'>
-      <p>Sarah Chen</p>
-      <span>@sarahchen</span>
-      <span>.</span>
-      <span>2h</span>
-    </div>
-  )
-}
-
-const Content = () => {
-  return (
-    <p>
-      Just finished a 5K run in the park! Feeling great and energized. #fitness #running
-    </p>
   )
 }
 
